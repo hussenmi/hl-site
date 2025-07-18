@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #c9a876 100%);
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(201, 168, 118, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(201, 168, 118, 0.1) 0%, transparent 50%);
+            background-size: 200px 200px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: rgba(255,255,255,0.9);
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+        
+        .bismillah, .alhamdulillah {
+            font-size: 1.5em;
+            color: rgba(201, 168, 118, 0.9);
+            margin: 15px 0;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.1s forwards;
+        }
+        
+        .alhamdulillah {
+            font-size: 1.2em;
+            animation-delay: 0.5s;
+        }
+
+        .story-section {
+            margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .story-section:nth-child(2) { animation-delay: 0.5s; }
+        .story-section:nth-child(3) { animation-delay: 0.7s; }
+        .story-section:nth-child(4) { animation-delay: 0.9s; }
+        .story-section:nth-child(5) { animation-delay: 1.1s; }
+
+        .centered-text {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .split-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            min-height: 300px;
+        }
+
+        .split-content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text-content {
+            flex: 2;
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 900px;
+        }
+
+        .text-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-placeholder:hover {
+            transform: scale(1.05);
+        }
+
+        .story-text {
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .story-text:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .story-text h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .story-text p {
+            font-size: 1.3em;
+            color: #2d3748;
+            line-height: 1.8;
+        }
+        
+        .text-content p {
+            font-size: 1.3em;
+            color: #2d3748;
+            line-height: 1.8;
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255,255,255,0.1);
+            font-size: 20px;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .split-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .split-content.reverse {
+                flex-direction: column;
+            }
+            
+            .text-content, .story-text {
+                padding: 30px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="bismillah">بسم الله الرحمن الرحيم</div>
+            <h1>Lina and Hussen</h1>
+            <p>The beautiful moments we've shared together</p>
+            <div class="alhamdulillah">السلام عليكم ورحمة الله وبركاته</div>
+        </div>
+
+        <div class="story-section">
+            <div class="centered-text">
+                <div class="story-text">
+                    <p>This is where our story begins. Replace this text with your own beautiful memory of how you two first met or connected. Maybe it was a chance encounter, a mutual friend's introduction, or a moment when you both realized something special was happening between you.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content">
+                <div class="text-content">
+                    <p>Write about your first memorable experience together here. Maybe it was your first date, a trip you took, or just a simple moment that made you both laugh. This layout gives you space to tell the story while having a photo or emoji on the right to complement it.</p>
+                </div>
+                <div class="image-content">
+                    <div class="image-placeholder">
+                        📸
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content reverse">
+                <div class="text-content">
+                    <p>Here's another story section, but this time the image is on the left and text on the right. You can share another precious memory, maybe the moment you realized you were falling in love, or a funny incident that brought you closer together.</p>
+                </div>
+                <div class="image-content">
+                    <div class="image-placeholder">
+                        💕
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content">
+                <div class="text-content">
+                    <p>Add more sections like this one for all your special memories. Each section alternates sides automatically. You can replace the emoji placeholders with actual photos by changing the emoji to an img tag with src="your-photo.jpg".</p>
+                </div>
+                <div class="image-content">
+                    <div class="image-placeholder">
+                        🌟
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content reverse">
+                <div class="text-content">
+                    <p>End with your hopes and dreams for the future together. This creates a beautiful narrative arc from your beginnings to where you're heading. The gentle animations and hover effects add a touch of interactivity without being overwhelming.</p>
+                </div>
+                <div class="image-content">
+                    <div class="image-placeholder">
+                        🌅
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating Islamic symbols animation
+        function createSymbol() {
+            const symbol = document.createElement('div');
+            symbol.className = 'heart';
+            const symbols = ['✦', '☪', '✧', '⭐'];
+            symbol.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+            symbol.style.left = Math.random() * 100 + '%';
+            symbol.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            symbol.style.opacity = Math.random() * 0.3 + 0.1;
+            document.querySelector('.floating-hearts').appendChild(symbol);
+            
+            setTimeout(() => {
+                symbol.remove();
+            }, 15000);
+        }
+        
+        // Create symbols periodically
+        setInterval(createSymbol, 3000);
+        
+        // Smooth scrolling for any future navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
