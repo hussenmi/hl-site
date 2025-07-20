@@ -15,7 +15,7 @@
         body {
             font-family: 'Georgia', serif;
             line-height: 1.7;
-            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #c9a876 100%);
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #6b8e6b 100%);
             min-height: 100vh;
             color: #333;
             overflow-x: hidden;
@@ -38,7 +38,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 60px 20px;
         }
@@ -91,7 +91,7 @@
 
         .centered-text {
             text-align: center;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -113,7 +113,7 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 900px;
+            max-width: 1200px;
         }
 
         .text-content:hover {
@@ -149,7 +149,7 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -188,9 +188,11 @@
 
         .heart {
             position: absolute;
-            color: rgba(255,255,255,0.1);
-            font-size: 20px;
+            color: rgba(255,255,255,0.3);
+            font-size: 24px;
             animation: float 15s infinite linear;
+            z-index: 10;
+            pointer-events: none;
         }
 
         @keyframes fadeInUp {
@@ -238,16 +240,25 @@
     
     <div class="container">
         <div class="header">
-            <div class="bismillah">بسم الله الرحمن الرحيم</div>
+            <div class="bismillah">السلام عليكم ورحمة الله وبركاته</div>
             <h1>Lina and Hussen</h1>
-            <p>The beautiful moments we've shared together</p>
-            <div class="alhamdulillah">السلام عليكم ورحمة الله وبركاته</div>
+            <!-- <p>The beautiful moments we've shared together</p> -->
+            <div class="alhamdulillah">بسم الله الرحمن الرحيم</div>
         </div>
 
         <div class="story-section">
             <div class="centered-text">
                 <div class="story-text">
-                    <p>This is where our story begins. Replace this text with your own beautiful memory of how you two first met or connected. Maybe it was a chance encounter, a mutual friend's introduction, or a moment when you both realized something special was happening between you.</p>
+                    <p style="background: rgba(26, 71, 42, 0.12); color: #206040; border-left: 6px solid #1a472a; padding: 18px 24px; border-radius: 10px; font-size: 1.25em; font-style: italic; margin-bottom: 18px;">
+                        Before I start with anything, I want to renew my intention and seek Allah's blessings for what I'm about to write and for how you receive it. I also ask you to insha'Allah engage with what I've written here with an open mind and an open heart and with sincere intention. Here, I want to recite the Dua of Prophet Musa (AS) that is recommended before giving a speech so that the other party understands you better. Even though this is not a speech, it will still put barakah in it:<br>
+                        <span style="display:block; margin:18px 0 8px 0; font-size:1.15em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                            رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي
+                        </span>
+                        <span style="display:block; margin-bottom:14px; color:#206040; font-size:1em; font-style:italic;">
+                            “My Lord, expand for me my breast [with assurance] And ease for me my task And untie the knot from my tongue That they may understand my speech.”
+                        </span>
+                        <span style="font-weight:bold; color:#1a472a;">جَزَاكِ اللهُ خَيْرًا</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -255,23 +266,30 @@
         <div class="story-section">
             <div class="split-content">
                 <div class="text-content">
-                    <p>Write about your first memorable experience together here. Maybe it was your first date, a trip you took, or just a simple moment that made you both laugh. This layout gives you space to tell the story while having a photo or emoji on the right to complement it.</p>
+                    <p>After our phone call last time and our decision, I took more than a month to reflect and see how I feel about the whole situation. 
+                        I could've written you a text like I usually do on WhatsApp, but I didn't want to bore you with a long text over there. You deserve so much better, so I made this website instead. 
+                        I'll explain everything, from how I'm feeling to why I'm reaching out, and some reflections I have step by step so please just bear with me, insha'Allah.</p>
+                    <!-- <p>Write about your first memorable experience together here. Maybe it was your first date, a trip you took, or just a simple moment that made you both laugh. This layout gives you space to tell the story while having a photo or emoji on the right to complement it.</p> -->
                 </div>
-                <div class="image-content">
+                <!-- <div class="image-content">
                     <div class="image-placeholder">
                         📸
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
         <div class="story-section">
             <div class="split-content reverse">
                 <div class="text-content">
-                    <p>Here's another story section, but this time the image is on the left and text on the right. You can share another precious memory, maybe the moment you realized you were falling in love, or a funny incident that brought you closer together.</p>
+                    <p>For the past couple of weeks, I've been continuing on my Tahajjud prayers (<span style="font-style: italic;">الحمد لله</span>) and doing isthikhara, asking Allah to guide my and your heart to the right path He chose for me and you. I asked Allah:</p>
+                    <div style="background: rgba(26, 71, 42, 0.12); color: #206040; border-left: 6px solid #1a472a; padding: 18px 24px; border-radius: 10px; font-size: 1.15em; font-style: italic; margin: 22px 0 18px 0;">
+                        "Ya Allah, If this is the path You chose for me, if we're truly each other's naseeb, let me work for it and make myself better to deserve her and put barakah in my time so I can be very productive in improving myself and truly understand what my heart really wants. And make both of our hearts guided to the right way that pleases You and not fall into the whispers of shaytan. Let us not fall into his whispers of sawing doubt and fear in our hearts to avoid making us follow the sunnah of our beloved Prophet (SAW). If this is not the path You chose for me and us, make mine and Lina's heart feel at ease and at rest, if that's what's best in Your infinite wisdom, while You know and I do not."
+                    </div>
+                    <p>And I believe that the answer to my dua couldn't have seemed any clearer from my side. If we're truly each other's naseeb, Allah will bring us together in His own timing, not ours. He will put our hearts at ease. And most of all, I want your heart to feel peace. That's my priority, so that's what I'm trying to do here, insha'Allah.</p>
                 </div>
                 <div class="image-content">
-                    <div class="image-placeholder">
+                    <div class="image-placeholder" style="font-size: 7em;">
                         🤲🏼
                     </div>
                 </div>
@@ -281,12 +299,157 @@
         <div class="story-section">
             <div class="split-content">
                 <div class="text-content">
-                    <p>Add more sections like this one for all your special memories. Each section alternates sides automatically. You can replace the emoji placeholders with actual photos by changing the emoji to an img tag with src="your-photo.jpg".</p>
+                    <p>You know how I told you that before I attended my university, that I didn't think this kind of school would exist, but it was still my dream school before I even knew it existed. That is the same way I feel about you. Before I met you, you were my dream person. 
+                        I didn't think a person like you would exist, but when Allah brought us together, I saw His divine plan unfolding before my eyes as you are someone who is His way of answering my prayers. Before I continue further, I want to apologize for something. 
+                        You know how previously, after some of our interactions, I would offer a general apology saying, "if I have done or said anything to offend you or make you uncomfortable, I'm very sorry." Well now, I have something more specific to address.
+                    </p>
+
+                    <br>
+
+                    <p>I want to apologize for how I acted after our in-person meet up. I don't know if you noticed it or not, but it was not an intentional thing. I only now realize that I acted a bit differently in the phone calls we had afterwards.
+                        It was different to how we interacted before that. For example, when we fasted together, I felt the most connected to you and we were brought together in the worship of Allah. Reflecting back on it now, I realized that after our meeting,  I acted differently because I didn't know what the feeling was.
+                        Meeting you in-person went much better than I thought and we had so much chemistry. Not only is your akhlaq what I always imagined my partner would have, I was also introduced to you amazing family (through your sister) and the kind of family I'd potentially be getting into.
+                        At the time, I didn't know how to process it. So I was not being myself. On the calls we had afterwards when discusing some of the issues, I now realize that I was not the most logical or easy to work with. The way I communicated with you also changed without me realizing it.
+                        This is all to say that, I'm genuinely sorry for how I acted and it was not an intentional thing. It was a feeling that was new and scary so it was me trying to process it. I sincerly ask you to forgive me for the sake of Allah for that.
+                    </p>
                 </div>
                 <div class="image-content">
-                    <div class="image-placeholder">
-                        🌟
+                    <img src="img/sorry.jpg" alt="Sorry" class="image-placeholder" style="object-fit: cover; width: 100%; height: 300px; border-radius: 15px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content reverse" style="max-width: 1500px; margin: 0 auto;">
+                <div class="text-content">
+                    <p>With all the reflection I had processing my feelings, I realized how much you mean to me and how much I care about you. Everyday since our last call, I prayed for your safety. I wanted to know if you are getting home safe and if you are doing well in general. Earlier, I mentioned that I was praying saying, if we're really each other's naseeb, for Allah to make me use my time wisely, to make me understand what I want, to open up my heart, and to be useful to those around me and most of all, to help me make you feel peace in your heart.
+                        Alhamdulillah, He made me so productive in so many things over the past couple of weeks. I led our masjid's effort of organizing a <a href="https://www.instagram.com/p/DMG6ERdA4BW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" style="color: #1952a7; text-decoration: underline;">youth bbq for the community</a>. Alhamdulillah, more than 60 people showed up and it was a good time.
+                        We're also organizing a night market food festival for August, and like I told you last time, I'm working on bringing more small businesses involved so that they get recognition. Alhamdulillah, things are going well so far. I (and two of my friends) also got invited by the management at our masjid to attend Ummrah with all our costs fully covered by World Assembly of Muslim Youth (WAMY) during the first week of August. Unfortunately, because of the timeframe though, we're not able to go. We're also organizing a big camping trip for more than 9 masajid in the New York and New Jersey area that's going to be over Labor day weekend.
+                        We're expecting more than 200 people to come, insha'Allah. I also got invited to a big retreat at work to go on a vacation with the highest management team. Now, I'm not saying any of this just for the sake of it. None of this is possible without Allah and I believe He is using this to make me better, to make me useful to those around me, to improve me, and make me deserve you insha'Allah. One other thing that I'm working on right now is a system that our masjid (and any other masjid in the future) can use to facilitate their work.
+                        It's an application that masjids can use to show prayer times and stuff, like most masjids have, but will also allow them to organize events, keep track of volunteers, manage donations, and more, in an organized way. I have learned that some masjids pay $500 a month for a service like this, so it's very needed. I would send you the website for you to look at it and try it, but it's not fully online yet since I'm still developing it, but I've recorded some of the features in the video that I've linked. May Allah put barakah in the work and make it useful in a way that pleases Him.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        So Alhamdulillah, Allah has helped me a lot throughout this time, but while doing all of this, I noticed how all of this would have been much sweeter and felt better if you were besides me on my side. My dream for us is to be there for each other and support one another through all of what life has to offer. I want to be there for you throughout everything, supporting you and cheering you on in every way. And most of all, I want us to grow together in our deen, striving in the way of Allah and His beloved Prophet (SAW).
+                    </p>
+                </div>
+                <div class="image-content" style="flex: 1.5;">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/aF1NLeZHUps"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        style="border-radius: 15px; width: 100%; max-width: 600px; height: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content">
+                <div class="text-content">
+                    <p>
+                        Earlier, I mentioned that the feeling I felt after our meeting was something new and not something I thought I'd feel, especially after just one meeting. Such that it left me very confused and this was the reason for how I acted, for how our conversations went, and probably for why your heart started feeling the way it did. Since then, all the Dua made it extremely clear that the feeling I had was love in its purest form. I've never used that word before (except with family but that's different). I know this might not be very appropriate to say at this stage, but I just want you to know how I truly feel about you. There is a lot to love about you.
+                        You are very islamically grounded, smart, beautiful, funny, and you have a very kind heart. May Allah bless you and increase you in all of that 🤲🏼. A lot of wise people recommend to not be attracted by superficial things and to really ask ourselves what it is that we're really attracted about the other person. For me, answering that question about you is the easiest thing. I absolutely love who you are, your essence, your energy, your heart, and most of all, your love of Allah.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <div class="image-placeholder" style="font-size: 9em; position: relative; overflow: visible; cursor: pointer;" id="love-heart">
+                        ❤️
                     </div>
+                </div>
+                <script>
+                    // Sprinkle small hearts into the background slowly on hover
+                    const loveHeart = document.getElementById('love-heart');
+                    let sprinkleInterval = null;
+                    loveHeart.addEventListener('mouseenter', function () {
+                        if (sprinkleInterval) return;
+                        let count = 0;
+                        sprinkleInterval = setInterval(() => {
+                            if (count >= 12) {
+                                clearInterval(sprinkleInterval);
+                                sprinkleInterval = null;
+                                return;
+                            }
+                            count++;
+                            // Create a small heart
+                            const smallHeart = document.createElement('div');
+                            smallHeart.textContent = '❤️';
+                            smallHeart.style.position = 'fixed';
+                            // Start at the heart's position
+                            const rect = loveHeart.getBoundingClientRect();
+                            smallHeart.style.left = (rect.left + rect.width / 2) + 'px';
+                            smallHeart.style.top = (rect.top + rect.height / 2) + 'px';
+                            smallHeart.style.fontSize = (Math.random() * 1.1 + 0.7) + 'em';
+                            smallHeart.style.opacity = '0.7';
+                            smallHeart.style.pointerEvents = 'none';
+                            smallHeart.style.zIndex = '2';
+                            smallHeart.style.transition = 'transform 1.6s cubic-bezier(.4,2,.6,1), opacity 1.2s linear';
+
+                            document.body.appendChild(smallHeart);
+
+                            // Random direction and distance for sprinkle
+                            const angle = Math.random() * 2 * Math.PI;
+                            const distance = Math.random() * 220 + 120;
+                            const x = Math.cos(angle) * distance;
+                            const y = Math.sin(angle) * distance;
+
+                            // Animate to background
+                            setTimeout(() => {
+                                smallHeart.style.transform = `translate(${x}px, ${y}px) scale(0.8)`;
+                                smallHeart.style.opacity = '0.15';
+                            }, 10);
+
+                            // Remove after animation
+                            setTimeout(() => {
+                                smallHeart.remove();
+                            }, 1700);
+                        }, 120);
+                    });
+                    loveHeart.addEventListener('mouseleave', function () {
+                        if (sprinkleInterval) {
+                            clearInterval(sprinkleInterval);
+                            sprinkleInterval = null;
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content reverse">
+                <div class="text-content">
+                    <p>
+                        One example of how I was freaked out during our meeting was when I realized all the things that make us similar. For example, in the Starbucks, while we were waiting for the bus to take us back to the train station, you mentioned that you're very particular to how things are organized. Like, if you organized books, for example, if someone comes and rearranges them, you'd know about it. Even if it was a slight arrangement. And it's exactly the same for me.
+                        So when you said that, I kind of freaked out a bit internally and there were a lot of moments like this throughout the day where I just thought, "the feeling I'm experiencing now is something I've never experienced before," and now I know it's the purest form of love. Alhamdulillah. You might think it's weird how I remembered that one interaction of us the the Startbucks, but it's not just that one.
+                        For me, when it comes to people I really care about, I remember every little detail. I remember every comment that you made, all the conversations we had during our matcha trip (matcha in the pic). I remember the name of the cafe we went to and even the pop up coffee shop at ICNA that you showed me on Instagram and so many more. I remember the outfit you wore that day and not just that day as well. I remember the Winnie the Pooh shirt you wore during one of our video calls 😁.
+                        I even remember the book your sister was reading on the train (Americanah by Chimamanda Ngozi Adichie). I even remember the sticker you have on your laptop from one of the photos you sent me (the praying women masha'Allah). Every little thing that is associated with you stays with me. Even now, I don't use Instagram much because I don't have much time, but when I see some of the stories you post, it tells me that you're okay, which calms me down and puts my heart at ease. It also reminds me of something.
+                        I don't know if you remember, but once, you asked me, which one of your photos on Instagram was my favorite. I then looked at your profile and told you which ones (although all of them are amazing). By me looking at that once, it was almost like a photographic memory for me because when I saw one of your recent IG stories, I realized that, "oh, this was taken in Italy. I saw it in one of her Italy posts." And in another story, I was like, "when she posted this picture previously, I told her she looks amazing in green 💚 and she taught me that green is the favorite color of our Prophet (SAW)."
+                    </p>
+                    <br>
+                    <p>
+                        All of these things are just engrained in my brain effortlessly because it's you. You have a very special place in my heart and my mind, and Allah has allocated that part just for you. That's why I'm able to say and remember so much about you. And whatever I've written here so far doesn't even scratch the surface of how much I care about you and how much you mean to me.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="img/oleum-matcha.jpg" alt="Matcha Cafe" style="width: 100%; max-width: 400px; height: auto; border-radius: 15px; display: block; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="split-content">
+                <div class="text-content">
+                    <p>
+                        So like I told you, not a single day had passed where I didn't make Dua for your safety and for Allah to guide our hearts to what's best for us and to allow us to strive on His path. It's funny how some freinds and family asked to introduce me to other people but that was something I couldn't even begin to think about because Allah put you in a very special place in my heart and put the desire in me that pushes me to strive in His path to deserve you. Because I beleive the heart to a good Muslim women is through being connected to Allah.
+                    </p>
+                    <br>
+                    <p>
+                        I also want to mention that during our calls, I treated location of where we'll be with so much priority, but after all the reflection, that could not be further from the truth. Yes, I still do like New York City and a big city in general, but I believe how I was presenting my case was arrogant and not really considerate of you. You are completely right that it doesn't make much sense to try and have a family in the big city. I agree with that. But even for now, you made a good point of why you don't want to live here, and I respect that. Going forward, location is not something that'll be a problem. For what it's worth, I could move to the DMV right now if that is where you really want to be based in, at least for now. But this is something that we could discuss the details of. I also have a lot of family in the DMV, so it's going to be a good place to be in. Ultimately, wherever we end up, my priority is building a life and home with you where we worship Allah together 🤲🏼📿.
+                        I want to pray alongside you, I want to go to the masjid with you, I want to fast Ramadan with you, I want to fast your make up fasts with you, I want to go to Hajj and Umrah with you, I want to be there with you through everything. I want to be the one who supports you, who listens to you, who makes you laugh, who makes you loved and cared for, and importantly who makes you feel at peace in your heart. Wallah there is nothing I want to do more than provide peace and <span style="font-style: normal; font-weight: bold;">sakina</span> to your heart and be a garment for you as Allah says in the Quran: <span style="font-style: italic;">"Your spouses are a garment for you as you are a garment for them." (Quran 2:187)</span>
+                        <!-- <p></p> -->
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="img/praying-together.jpg" alt="Praying Together" style="width: 100%; max-width: 400px; height: auto; border-radius: 15px; display: block; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                 </div>
             </div>
         </div>
@@ -294,27 +457,92 @@
         <div class="story-section">
             <div class="split-content reverse">
                 <div class="text-content">
-                    <p>End with your hopes and dreams for the future together. This creates a beautiful narrative arc from your beginnings to where you're heading. The gentle animations and hover effects add a touch of interactivity without being overwhelming.</p>
+                    <p>
+                        Now with all that said, I'm not expecting your heart to feel at ease over night. All I'm asking is for you to give us one more chance for the sake of Allah. And to allow us to work towards it. The reason for the change of heart you had could be because how I acted after our meeting, but it could also be other things. It could also be getting the feelings of unreadiness. It's all fine. You can just mention anything and everything that is bothering you and we can work through them together insha'Allah. I believe Allah has taught us a lot throughout this process, and I ask you to give us one more chance. I also think, how we went about it last time, while it had a lot of good aspects and was islamically grounded (thanks to some of your rules including not calling after Maghrib), can be made even better. Getting family involved, I think, is important, not only islamically speaking to make things halal, but also to make sure that we get the advice and support we need from them insha'Allah. Again, none of what I'm saying here is to put pressure on you, but just to show you how much you mean to me and to let you know that I respect you a lot to do anything that compromises you and our islamic guidelines.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Finally, I want to end with Quranic Duas that I have been reciting and have helped me find clarity. We can work on them together and gain peace of heart insha'Allah:
+                        <div style="background: rgba(255,255,255,0.96); border-radius: 18px; box-shadow: 0 8px 28px rgba(26,71,42,0.10); padding: 36px 28px; margin: 32px 0; display: flex; flex-direction: column; gap: 32px;">
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "My Lord! I am truly in desperate need of whatever provision You may have in store for me." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Al-Qasas, 28:24)</span>
+                                </span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Al-Anbiya, 21:87)</span>
+                                </span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "Our Lord, let not our hearts deviate after You have guided us." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Al-Imran, 3:8)</span>
+                                </span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    رَبَّنَا ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ ٱلْحِسَابُ
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "Our Lord, forgive me and my parents and the believers the Day the account is established." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Ibrahim, 14:41)</span>
+                                </span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّـٰتِنَا قُرَّةَ أَعْيُنٍۢ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "Our Lord, Bless us with pious spouses and offspring who will be the joy of our hearts, and make us models for the righteous." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Al-Furqan, 25:74)</span>
+                                </span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display:block; margin-bottom:10px; font-size:1.18em; color:#1a472a; font-weight:bold; letter-spacing:1px;">
+                                    رَبِّ تَوَفَّنِى مُسْلِمًا وَأَلْحِقْنِى بِٱلصَّٰلِحِينَ
+                                </span>
+                                <span style="color:#206040; font-size:1em; font-style:italic;">
+                                    "My Lord, allow me to die as a Muslim and join me with the righteous." <br>
+                                    <span style="font-size:0.95em; color:#888;">(Surah Yusuf, 12:101)</span>
+                                </span>
+                            </div>
+                        </div>
+                    </p>
                 </div>
-                <div class="image-content">
+                <!-- <div class="image-content">
                     <div class="image-placeholder">
                         🌅
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
+    <script async src="//www.instagram.com/embed.js"></script>
     <script>
         // Create floating Islamic symbols animation
         function createSymbol() {
             const symbol = document.createElement('div');
             symbol.className = 'heart';
-            const symbols = ['✦', '☪', '✧', '⭐'];
+            const symbols = ['☪', '⭐', '🌙', '📿'];
             symbol.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
             symbol.style.left = Math.random() * 100 + '%';
             symbol.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            symbol.style.opacity = Math.random() * 0.3 + 0.1;
+            symbol.style.opacity = Math.random() * 0.7 + 0.1;
             document.querySelector('.floating-hearts').appendChild(symbol);
             
             setTimeout(() => {
